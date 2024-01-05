@@ -1,7 +1,12 @@
 import { FaStar } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 export default function Card() {
+  const nav = useNavigate();
   return (
-    <div className="w-[200px] hover:border-[2px] bg-[#fff] mt-5 shadow-md hover:shadow-lg rounded-lg">
+    <div
+      onClick={() => nav("/detail/abc")}
+      className="w-[200px] hover:border-[2px] bg-[#fff] mt-5 shadow-md hover:shadow-lg rounded-lg"
+    >
       <div className="w-full mx-auto">
         <div className="w-full mx-auto p-1">
           <img
